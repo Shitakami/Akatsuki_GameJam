@@ -1,9 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp.dll:
+    - DebugController
+    - DebugController2
     Oculus.VR.Editor.dll:
     - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
+    - OVRControllerHelper
     - OVRHeadsetEmulator
     - OVRManager
     UnityEditor.Graphs.dll:
@@ -12,8 +16,14 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Test_Controller.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -38,6 +48,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -49,12 +63,38 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9532}
     - Class: 114
+      Script: {instanceID: 9594}
+    - Class: 114
+      Script: {instanceID: 9600}
+    - Class: 114
+      Script: {instanceID: 9606}
+    - Class: 114
+      Script: {instanceID: 9650}
+    - Class: 114
+      Script: {instanceID: 9652}
+    - Class: 114
+      Script: {instanceID: 10004}
+    - Class: 114
       Script: {instanceID: 10182}
     - Class: 114
-      Script: {instanceID: 11036}
+      Script: {instanceID: 10656}
+    - Class: 114
+      Script: {instanceID: 10916}
+    - Class: 114
+      Script: {instanceID: 11040}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -437,6 +477,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Oculus.Platform.Samples.VrBoardGame
     className: BoardPosition
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: CallbackExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Editor
+    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -1231,6 +1283,12 @@ ScriptsOnlyBuild:
     className: MouseLook
   - hash:
       serializedVersion: 2
+      Hash: 78d5f6876fc16cfe8abf8e453224a591
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebugController
+  - hash:
+      serializedVersion: 2
       Hash: 4c063458ca029e84d4f59c22fc3c5fca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1409,6 +1467,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 719bb6d1f17cd7d48381ccf8961af19e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebugController2
   - hash:
       serializedVersion: 2
       Hash: bbf6c8bbcb3097b51034aeb2a5b7693a
@@ -1639,5 +1703,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Test_Controller.unity
   playerPath: C:/TestBuildQuest/testBuild.apk
